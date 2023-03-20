@@ -53,7 +53,22 @@ fun main() {
     println(mySet)
     println()
     
-    println("3. An empty mutable list and set containing STRINGS.")
+    println("3. An empty mutable list that can take ANY values.")
+    println()
+    
+    val  myEmptyList = mutableListOf<Any?>()
+    
+    println(myEmptyList)
+    
+    myEmptyList.add(5)
+    myEmptyList.add(76)
+    myEmptyList.add("Jool")
+    myEmptyList.add(56)
+    
+    println(myEmptyList)
+    println()
+    
+    println("4. An empty mutable list and set that can only take STRINGS.")
     println()
     
     var colorList = mutableListOf<String>()
@@ -77,7 +92,7 @@ fun main() {
     println(colorList)
     println(colorSet)
     
-    //the follwing piece of code adds all the elements in the list and adds them to the set
+    //the following piece of code adds all the elements in the list and adds them to the set
     //in this case, some elements in the list repeat (see "Yellow"), and hence the duplicates will not be taken in the set
     for(uniqueColor in colorList){
         colorSet.add(uniqueColor)
@@ -86,7 +101,7 @@ fun main() {
     println(colorSet)
     println()
     
-    println("3. An mutable map and its operations.")
+    println("5. An mutable map and its operations.")
     println() 
     
     val myMap = mutableMapOf("33" to "34", 5 to "Blooper", "Faze" to 34, 56 to 78)
