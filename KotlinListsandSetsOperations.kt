@@ -77,17 +77,13 @@ fun main() {
     println(colorList)
     println(colorSet)
     
-    
+    //the follwing piece of code adds all the elements in the list and adds them to the set
+    //in this case, some elements in the list repeat (see "Yellow"), and hence the duplicates will not be taken in the set
     for(uniqueColor in colorList){
-        colorSet.add(uniQueColor)
+        colorSet.add(uniqueColor)
     }
     
-    println(colorSet)
-    
-      
-      
-      
-         
+    println(colorSet)   
       
       
 }
