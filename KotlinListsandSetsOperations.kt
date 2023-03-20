@@ -83,7 +83,53 @@ fun main() {
         colorSet.add(uniqueColor)
     }
     
-    println(colorSet)   
-      
+    println(colorSet)
+    println()
+    
+    println("3. An mutable map and its operations.")
+    println() 
+    
+    val myMap = mutableMapOf("33" to "34", 5 to "Blooper", "Faze" to 34, 56 to 78)
+    
+    println(myMap)
+    
+    var findValueOfKey = myMap["33"] //in maps, to find the value, you need to speficy the key element. in this case key "33" gives the value "34"
+    var findValueOfKey2 = myMap["Faze"]
+    
+    println(findValueOfKey)
+    println(findValueOfKey2)
+    
+    var mapKeys = myMap.keys
+    var mapValues = myMap.values
+    
+    println(mapKeys)
+    println(mapValues)
+    
+    //reassign the value of a key-value pair using the key
+    myMap["Faze"] = 60
+    
+    println(myMap)
+    
+    //adding key-value pairs to the map
+    myMap.put(2, 100)
+    myMap.put(56, 78) //as with sets, this entry will not be added since there exists already a similar one in the map
+    myMap.put("Sekta", 666)
+    myMap.put("Jool", "Spot")
+    
+    println(myMap)
+    
+    //to remove any key-value pair in the map, you need to remove the key with the remove() function
+    myMap.remove("Jool")
+    
+    println(myMap)
+    
+    //to find if an element exists in the map, you can use the containsKey() or containsValue() functions
+    
+    var hasKey = myMap.containsKey(2)
+    var hasValue = myMap.containsValue(667)    
+    
+    println(hasKey)
+    println(hasValue)
+         
       
 }
